@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2da7a8f6106ff6b40be74f83377d9c81, type: 2}
+  - {fileID: 2100000, guid: 2294f9b65ea162e47a7880524e74b85d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -113,8 +113,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsGood: 1
-  GoodMaterial: {fileID: 2100000, guid: 2da7a8f6106ff6b40be74f83377d9c81, type: 2}
-  BadMaterial: {fileID: 2100000, guid: 1d25464f23ba7b842964b0f7336e3b08, type: 2}
+  GoodMaterial: {fileID: 2100000, guid: 2294f9b65ea162e47a7880524e74b85d, type: 2}
+  BadMaterial: {fileID: 2100000, guid: 779a720b7f099d84ab550259dc25a943, type: 2}
   BounceSound: {fileID: 3306319062957938202}
 --- !u!82 &3306319062957938202
 AudioSource:

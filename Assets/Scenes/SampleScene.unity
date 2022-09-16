@@ -283,6 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
+  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -367,6 +368,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 34.132, y: -0.71, z: 28.961}
+--- !u!114 &705507996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &717267217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,8 +1367,8 @@ MonoBehaviour:
   - {fileID: 78951796893195882, guid: a4e69fe80badda744a0127bb86c60775, type: 3}
   - {fileID: 4286065844935349978, guid: 87f4bb0f15a70964da67f957a622c4cb, type: 3}
   FirstPlatformPrefab: {fileID: 4449461920707015944, guid: 5b8612ebe6d57334cbfe04cf119216a5, type: 3}
-  MinPlatforms: 30
-  MaxPlatforms: 50
+  MinPlatforms: 5
+  MaxPlatforms: 10
   DistanceBetweenPlatforms: 1.5
   FinishPlatform: {fileID: 1243390670}
   CylinderRoot: {fileID: 1913337471}
@@ -1408,7 +1429,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 133603c2cc979df4fbc20ef24d3f00e7, type: 2}
+  - {fileID: 2100000, guid: 8ae1a426794dbe0479212bef86f20af5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1486,6 +1507,7 @@ MonoBehaviour:
   CurrentPlatform: {fileID: 0}
   Game: {fileID: 296394245}
   PlatformsNumber: 0
+  material: {fileID: 2100000, guid: 8ae1a426794dbe0479212bef86f20af5, type: 2}
 --- !u!82 &1789645254
 AudioSource:
   m_ObjectHideFlags: 0
