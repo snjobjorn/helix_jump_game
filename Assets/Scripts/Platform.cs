@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    public AudioSource PlatformBreakSound;    
+    public AudioSource PlatformBreakSound;
+    public ParticleSystem ps;
     public void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out Player player))
@@ -17,5 +18,14 @@ public class Platform : MonoBehaviour
     public void OnTriggerExit(Collider other)
     {
         PlatformBreakSound.Play();
+        StartCoroutine(platformExit());
+    }
+
+    public IEnumerator platformExit()
+    {
+        yield return new WaitForSeconds(0.3f);
+        ps.Play();
+        yield return new WaitForSeconds(0.3f);
+        gameObject.SetActive(false);
     }
 }
