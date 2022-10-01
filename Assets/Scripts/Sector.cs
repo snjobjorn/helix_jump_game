@@ -41,7 +41,7 @@ public class Sector : MonoBehaviour
         }
         else
         {
-            player.Die();
+            StartCoroutine(player.Die());
         }
     }
 
